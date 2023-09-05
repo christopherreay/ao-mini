@@ -1,2 +1,4 @@
-2023-09-05 11:49:16 -- INFO -- testApplication:logging.module.test.simple.sh -- A Logging Message
-2023-09-05 11:49:16 -- ERROR -- testApplication:logging.module.test.simple.sh -- logging.module.test.simple.sh -- LINE 10 -- Command failed with exit code 127.
+2023-09-05 11:56:17 -- INFO -- testApplication:logging.module.test.simple.sh -- A Logging Message
+2023-09-05 11:56:17 -- ERROR -- testApplication:logging.module.test.simple.sh -- logging.module.test.simple.sh -- LINE 10 -- Command failed with exit code 127.
+2023-09-05 11:56:27 -- INFO -- testApplication:logging.module.test.simple.sh -- A Logging Message
+2023-09-05 11:56:27 -- ERROR -- testApplication:logging.module.test.simple.sh -- logging.module.test.simple.sh -- LINE 10 -- Command failed with exit code 127.

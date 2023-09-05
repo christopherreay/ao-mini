@@ -1,0 +1,4 @@
+2023-09-05 11:54:47 -- ERROR -- :logging.module.test.simple.sh -- ../logging.module.sourceThis.sh: line 14: APPLICATIONNAME: unbound variable
+2023-09-05 11:54:47 -- ERROR -- :logging.module.test.simple.sh -- ../logging.module.sourceThis.sh: line 14: APPLICATIONNAME: unbound variable
+2023-09-05 11:56:17 -- ERROR -- :logging.module.test.simple.sh -- ../logging.module.sourceThis.sh: line 14: APPLICATIONNAME: unbound variable
+2023-09-05 11:56:17 -- ERROR -- :logging.module.test.simple.sh -- ../logging.module.sourceThis.sh: line 14: APPLICATIONNAME: unbound variable

@@ -3,7 +3,7 @@
 
 # FIFO and Environment Variable
 FIFO_PATH="/tmp/my_fifo"
-AO_BASH_LOGGINGMODE=${AO_BASH_LOGGINGMODE:-"NOLOGGING"}
+AO_BASH_LOGGINGMODE=${AO_BASH_LOGGINGMODE:-"LOCALFILE"}
 
 # Function to log messages
 log() {
@@ -11,8 +11,7 @@ log() {
   LEVEL=$2
   shift 2
   MESSAGE="$@"
-  FULL_MESSAGE="$APPLICATIONNAME $LEVEL $MESSAGE"
-
+  FULL_MESSAGE="$(date '+%Y-%m-%d %H:%M:%S') -- $LEVEL -- $APPLICATIONNAME:$(basename "$0") -- $MESSAGE"
   if [ "$AO_BASH_LOGGINGMODE" = "NOLOGGING" ]; then
     return 0
   elif [ "$AO_BASH_LOGGINGMODE" = "LOCALFILE" ]; then

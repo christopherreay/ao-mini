@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source ~/.ao-mini/logging.module.sourceThis.sh
+
 # Enable strict error handling to make the script exit on any unhandled error, undefined variable, or non-zero exit code in a pipeline.
 # -e: Exit immediately if a command exits with a non-zero exit status.
 # -u: Treat unset variables as an error and exit immediately.
@@ -16,14 +18,11 @@ error_exit() {
     local line="$1"  # Line number
     local message="$2"  # Error message
     local code="${3:-1}"  # Exit code, defaults to 1
-    log_error "$script_name:$line - $message"
-    echo "$script_name:$line - $message" 1>&2
-    exit "$code"
-}
 
-# Logging function
-log_error() {
-    echo "[$(date +'%Y-%m-%d %T')] ERROR: $1" >> "script_error.log"
+    local fullMessage="$script_name -- LINE $line -- $message"
+    log $APPLICATIONNAME ERROR $fullMessage
+    # echo $fullMessage 1>&2
+    exit "$code"
 }
 
 #  - Understanding Non-Zero Exit Codes

@@ -1,0 +1,2 @@
+2023-09-05 11:49:16 -- DEBUG -- ./logging.module.test.simple.sh:logging.module.test.simple.sh -- something on stdout
+2023-09-05 11:49:16 -- ERROR -- ./logging.module.test.simple.sh:logging.module.test.simple.sh -- ./logging.module.test.simple.sh: line 10: asdljkaslkjasd.noACommand: command not found

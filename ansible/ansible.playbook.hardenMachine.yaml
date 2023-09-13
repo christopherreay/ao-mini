@@ -1,0 +1,200 @@
+# the base system for the @ system
+
+# should probably break this up into roles
+
+---
+- hosts: "ao_mini_development_hosts"
+  become: yes
+  # vars:
+  #   required_home_directories:
+  #     - Scripts
+  #     - context
+  #   required_context_directories:
+  #     - aoMini
+  tasks:
+    # Perform a distribution upgrade.
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Upgrade all packages to their latest versions
+      apt:
+        upgrade: dist
+        autoremove: yes
+
+    - name: Install the latest kernel package
+      apt:
+        name: linux-generic
+        state: latest
+      register: kernel_update
+
+    - name: Reboot the machine if necessary
+      reboot:
+        msg: "Rebooting due to kernel upgrade"
+        connect_timeout: 5
+        reboot_timeout: 300
+      when: kernel_update.changed
+
+
+    - name: Install iptables-persistent
+      apt:
+        name: iptables-persistent
+        state: present
+      notify: 
+        - restart iptables-persistent
+
+      
+    # Configure iptables
+    - name: Allow related and established connections
+      iptables:
+        chain: INPUT
+        ctstate: "RELATED,ESTABLISHED"
+        jump: ACCEPT
+    - name: Allow localhost
+      iptables:
+        chain: INPUT
+        source: 127.0.0.1
+        jump: ACCEPT
+    - name: Allow web traffic on ports 80 and 443
+      iptables:
+        chain: INPUT
+        protocol: tcp
+        destination_port: "{{ item }}"
+        jump: ACCEPT
+      loop:
+        - "80"
+        - "443"
+    - name: Restrict SSH access to my public IP
+      iptables:
+        chain: INPUT
+        protocol: tcp
+        destination_port: "22"
+        jump: ACCEPT
+    - name: Default DROP on INPUT and FORWARD
+      iptables:
+        chain: "{{ item }}"
+        policy: DROP
+      loop:
+        - INPUT
+        - FORWARD
+    - name: Default ACCEPT on OUTPUT
+      iptables:
+        chain: OUTPUT
+        policy: ACCEPT
+
+    - name: Save state of iptables
+      community.general.iptables_state:
+        ip_version: "ipv4"
+        path: /etc/iptables/rules.v4
+        state: saved
+
+
+    # User management
+    - name: Create non-root sudo_user
+      user:
+        name: "{{ sudo_user }}"
+        # password: "{{ sudo_user_password }}"
+        groups: sudo
+        shell: /bin/bash
+    - name: Create .ssh directory for the sudo_user
+      file:
+        path: /home/{{ sudo_user }}/.ssh
+        state: directory
+        owner: "{{ sudo_user }}"
+        group: "{{ sudo_user }}"
+        mode: '0700'
+    - name: Add public key to sudo_user's authorized keys
+      authorized_key:
+        user: "{{ sudo_user }}"
+        state: present
+        key: "{{ lookup('file', '~/.ssh/ansible.sudoUser.key.shouldCycleThisKey.pub') }}"
+    - name: Allow sudo_user to have passwordless sudo
+      lineinfile:
+        path: /etc/sudoers.d/{{ sudo_user }}
+        create: yes
+        state: present
+        line: '{{ sudo_user }} ALL=(ALL) NOPASSWD: ALL'
+        validate: 'visudo -cf %s'
+
+    - name: Create main_user
+      user:
+        name: "{{ main_user }}"
+        # password: "{{ main_user_password }}"
+        groups: users
+        shell: /bin/bash
+    # - name: Add main_user to www-data group
+    #   user:
+    #     name: "{{ main_user }}"
+    #     groups: www-data
+    #     append: yes
+    - name: Create .ssh directory for the main_user
+      file:
+        path: /home/{{ main_user }}/.ssh
+        state: directory
+        owner: "{{ main_user }}"
+        group: "{{ main_user }}"
+        mode: '0700'
+    - name: Add public key to main_user's authorized keys
+      authorized_key:
+        user: "{{ main_user }}"
+        state: present
+        key: "{{ lookup('file', '~/.ssh/ansible.mainUser.key.shouldCycleThisKey.pub') }}"
+
+
+    # SSH Configuration
+    - name: Add hardened SSH config
+      copy:
+        dest: /etc/ssh/sshd_config
+        src: filesToCopyToTargetFilesystem/etc/ssh/sshd_config
+        owner: root
+        group: root
+        mode: 0600
+    - name: Enable SSH Agent Forwarding for main_user
+      become: yes
+      become_user: "{{ main_user }}"
+      blockinfile:
+        path: "/home/{{ main_user }}/.ssh/config"
+        create: yes
+        block: |
+          Host github.com
+            ForwardAgent yes
+    - name: Set appropriate ownership and permissions for main_user's SSH config
+      become: yes
+      become_user: "{{ main_user }}"
+      file:
+        path: "/home/{{ main_user }}/.ssh/config"
+        mode: '0600'
+      notify: delete main_user ansible tmp directory
+
+
+    - name: delete main_user ansible tmp directory
+      ansible.builtin.file:
+        path: /home/{{ main_user }}/.ansible
+        state: absent
+
+    
+    - name: Restart SSHD with hardened settings. Log in as sudo_user from here on out
+      service:
+        name: sshd  # or 'sshd' for RedHat/CentOS
+        state: restarted
+
+  handlers:
+    - name: restart iptables-persistent
+      service:
+        name: netfilter-persistent
+        state: restarted
+    
+
+    
+    
+
+    # - name: Enable and start mongos screen service
+    #   become: yes
+    #   systemd:
+    #     name: mongo
+    #     enabled: yes
+    #     state: started
+      # - name: Reload SSH
+      #   service:
+      #     name: sshd
+      #     state: reloaded

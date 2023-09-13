@@ -1,0 +1,2 @@
+[ao_mini_development_hosts]
+ao-mini.christopherreay.com ansible_ssh_user=sudoeree5b73 ansible_ssh_private_key_file=~/.ssh/ansible.sudoUser.key.shouldCycleThisKey

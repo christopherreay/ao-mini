@@ -1,0 +1,40 @@
+host_name:              "ao-mini"
+
+sudo_user:              "sudoeree5b73"
+# sudo_user_password:     "$5$K.10rZ7OlVj30$bMoy6jjsRLs30NERXWX3iCJET47huaHDnK6jnz31fG3"
+main_user:              "aominiuser"
+# main_user_password:     "$5$w4ghcOyX/mpBrVCa$ANtG9w7MBLPqyHvo69iFeWhff3j10j86DkjQ2Ge95UA"
+# my_public_ip: "{{ my_public_ip }}"
+
+home_dir:               "/home/{{ main_user }}"
+context_dir:            "{{ home_dir }}/context"
+
+
+# #example "v0.39.0". This has to match an URL properly
+# nvm_version:            "v0.39.0"
+# # this number is interpreted by nvm quite well.... just a raw number will try and get the latest version of that major release, etc
+# node_version:           "20"
+
+# mongodb_data_directory: "{{ context_dir }}/mongoDBDataDirectory"
+
+git_user_name__optional:          "christopher reay"
+git_user_email__optional:         "christopherreay@gmail.com"
+
+nginx_new_domain:       "{{ host_name }}.christopherreay.selfsigned.temporarycertificate"
+
+aoMini_screenWindows:
+  - name: "ao-mini runtime"
+    directory: "{{ context_dir }}/aoMini/ao-mini"
+    command: "echo 'application home'"
+  - name: "ao-mini admin"
+    directory: "{{ context_dir }}/aoMini/ao-mini"
+    command: "echo check credentials or look at logs"
+  # - name: "node.js"
+  #   directory: "{{ context_dir }}/at/atJS"
+  #   command: "echo node.js"
+  # - name: "atNodeScripts"
+  #   directory: "{{ context_dir }}/at/atNodeScripts"
+  #   command: "echo pretty much used for opening the firewall"
+  # - name: "mongoStuff"
+  #   directory: "{{ context_dir }}/at/applicationBackups/interface/mongoexport/atStore_interface"
+  #   command: "echo use mongosh command"

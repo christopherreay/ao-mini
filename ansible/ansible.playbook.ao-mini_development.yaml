@@ -1,0 +1,370 @@
+# the base system for the @ system
+
+# should probably break this up into roles
+
+---
+- hosts: "ao_mini_development_hosts"
+  become: yes
+  # become_user: root
+  vars:
+    required_home_directories:
+      - Scripts
+      - context
+    required_context_directories:
+      - aoMini
+      - aoMini/screen
+  tasks:
+    # - name: Display all variables/facts known for a host
+    #   ansible.builtin.debug:
+    #    var: hostvars[inventory_hostname]
+
+
+    # User management
+    - name: Create ao-mini root admin user (for use by automated scripts)
+      user:
+        name: "ao-mini-admin"
+        # password: "{{ sudo_user_password }}"
+        shell: /bin/bash
+    - name: Create .ssh directory for the sudo_user2
+      file:
+        path: /home/ao-mini-admin/.ssh
+        state: directory
+        owner: "ao-mini-admin"
+        group: "ao-mini-admin"
+        mode: '0700'
+    - name: Add public key to ao-mini-admin's authorized keys
+      ansible.posix.authorized_key:
+        user: "ao-mini-admin"
+        state: present
+        key: "{{ lookup('file', '~/.ssh/ansible.mainUser.key.shouldCycleThisKey.pub') }}"
+    # - name: Allow sudo_user to have passwordless sudo
+    #   lineinfile:
+    #     path: /etc/sudoers.d/ao-mini-admin
+    #     create: yes
+    #     state: present
+    #     line: '{{ sudo_user }} ALL=(ALL) NOPASSWD: ALL'
+    #     validate: 'visudo -cf %s'
+        
+    
+    # # Software Installation
+
+    # - name: Allow sudo_user to run su without a password
+    #   ansible.builtin.lineinfile:
+    #     path: /etc/sudoers
+    #     line: '{{ sudo_user }} ALL=(ALL) NOPASSWD: /usr/bin/su'
+    #     validate: 'visudo -cf %s'
+
+
+    # - name: Create home dirs
+    #   # become: yes
+    #   # become_user: "{{ main_user }}"
+    #   ansible.builtin.file:
+    #     path: "{{ home_dir }}/{{ item }}"
+    #     state: directory
+    #     mode: '0755'
+    #     owner: "{{ main_user }}"
+    #     group: "{{ main_user }}"
+    #   loop: "{{ required_home_directories }}"
+
+    # - name: Create context dirs
+    #   # become: yes
+    #   # become_user: "{{ main_user }}"
+    #   ansible.builtin.file:
+    #     path: "{{ context_dir }}/{{ item }}"
+    #     state: directory
+    #     mode: '0755'
+    #     owner: "{{ main_user }}"
+    #     group: "{{ main_user }}"
+    #   loop: "{{ required_context_directories }}"
+
+    - name: Create home dirs
+      ansible.builtin.file:
+        path: "/home/ao-mini-admin/{{ item }}"
+        state: directory
+        mode: '0755'
+        owner: "ao-mini-admin"
+        group: "ao-mini-admin"
+      loop: "{{ required_home_directories }}"
+
+    - name: Create context dirs
+      ansible.builtin.file:
+        path: "/home/ao-mini-admin/context/{{ item }}"
+        state: directory
+        mode: '0755'
+        owner: "ao-mini-admin"
+        group: "ao-mini-admin"
+      loop: "{{ required_context_directories }}"
+
+
+
+    # # Screen
+    # - name: Install screen
+    #   apt:
+    #     name: screen
+    #     state: present
+
+    # # Screen SSH forwarding setup
+    # - name: Configure screen SSH forwarding in ~/.screenrc
+    #   # become: yes
+    #   # become_user: "{{ main_user }}"
+    #   copy:
+    #     dest: "/home/{{ main_user }}/.screenrc"
+    #     content: |
+    #       setenv SSH_AUTH_SOCK $HOME/.ssh/ssh_auth_sock
+    #     mode: '0600'
+    #     owner: "{{ main_user }}"
+    #     group: "{{ main_user }}"
+    # - name: Configure SSH forwarding in ~/.ssh/rc
+    #   # become: yes
+    #   # become_user: "{{ main_user }}"
+    #   copy:
+    #     dest: "/home/{{ main_user }}/.ssh/rc"
+    #     content: |
+    #       if test "$SSH_AUTH_SOCK" ; then
+    #           ln -sf $SSH_AUTH_SOCK ~/.ssh/ssh_auth_sock
+    #       fi
+    #     mode: '0700'
+    #     owner: "{{ main_user }}"
+    #     group: "{{ main_user }}"
+    
+    # - name: screen.at generate the screen.aoMini.rc file from template
+    #   template:
+    #     src:    "filesToCopyToTargetFilesystem/home/main_user/context/aoMini/screen/screen.aoMini.rc.j2"
+    #     dest:   "{{ context_dir }}/aoMini/screen/screen.aoMini.rc"
+    #     owner:  "{{ main_user }}"
+    #     group:  "{{ main_user }}"
+    #     mode:   "0644"    
+
+
+    # Screen SSH forwarding setup
+    - name: Configure screen SSH forwarding in ~/.screenrc
+      copy:
+        dest: "/home/ao-mini-admin/.screenrc"
+        content: |
+          setenv SSH_AUTH_SOCK $HOME/.ssh/ssh_auth_sock
+        mode: '0600'
+        owner: "ao-mini-admin"
+        group: "ao-mini-admin"
+    - name: Configure SSH forwarding in ~/.ssh/rc
+      copy:
+        dest: "/home/ao-mini-admin/.ssh/rc"
+        content: |
+          if test "$SSH_AUTH_SOCK" ; then
+              ln -sf $SSH_AUTH_SOCK ~/.ssh/ssh_auth_sock
+          fi
+        mode: '0700'
+        owner: "ao-mini-admin"
+        group: "ao-mini-admin"
+    
+    - name: screen.at generate the screen.aoMini.rc file from template
+      template:
+        src:    "filesToCopyToTargetFilesystem/home/main_user/context/aoMini/screen/screen.aoMini.rc.j2"
+        dest:   "/home/ao-mini-admin/context/aoMini/screen/screen.aoMini.rc"
+        owner:  "ao-mini-admin"
+        group:  "ao-mini-admin"
+        mode:   "0644"    
+
+
+    # # Git Insta/llation and Configuration
+    # - name: Install Git
+    #   apt:
+    #     name: git
+    #     state: present
+   
+
+    # - name: Set Git global user name
+    #   command:
+    #     sudo -u aominiuser git config --global  user.name "Christopher Reay"
+    #   when: git_user_name__optional is defined
+    # - name: Set Git global user email
+    #   command:
+    #     sudo -u aominiuser git config --global  user.email christopherreay@gmail.com
+    #   when: git_user_email__optional is defined
+
+
+    # - name: Create ~/Scripts/screen.aoMini script
+    #   copy:
+    #     dest: "/home/{{ main_user }}/Scripts/screen.aoMini"
+    #     content: |
+    #       #!/bin/bash
+    #       cd {{ context_dir }}/aoMini && screen -c "{{ context_dir }}/aoMini/screen/screen.aoMini.rc" -dRR screen.aoMini
+    #     mode: '0755'
+    #     owner: "{{ main_user }}"
+    #     group: "{{ main_user }}"
+
+    - name: Create ~/Scripts/screen.aoMini script
+      copy:
+        dest: "/home/ao-mini-admin/Scripts/screen.aoMini"
+        content: |
+          #!/bin/bash
+          cd /home/ao-mini-admin/context/aoMini && screen -c "/home/ao-mini-admin/context/aoMini/screen/screen.aoMini.rc" -dRR screen.aoMini
+        mode: '0755'
+        owner: "ao-mini-admin"
+        group: "ao-mini-admin"
+
+    
+
+   
+  handlers:
+    - name: restart iptables-persistent
+      service:
+        name: netfilter-persistent
+        state: restarted
+
+    
+    
+
+    # - name: Enable and start mongos screen service
+    #   become: yes
+    #   systemd:
+    #     name: mongo
+    #     enabled: yes
+    #     state: started
+      # - name: Reload SSH
+      #   service:
+      #     name: sshd
+      #     state: reloaded
+
+
+
+       # # Node.js via NVM:
+    # - name: Install NVM prerequisites
+    #   apt:
+    #     name:
+    #       - curl
+    #       - build-essential
+    #       - libssl-dev
+    #     state: present
+ 
+    # - name: Install or Update NVM for main_user
+    #   become: yes
+    #   become_user: "{{ main_user }}"
+    #   git: 
+    #     repo: "https://github.com/creationix/nvm.git"
+    #     dest: "{{ home_dir }}/.nvm" 
+    #     version: "{{ nvm_version }}"
+    # - name: add .nvm to .bashrc
+    #   become: yes
+    #   become_user: "{{ main_user }}"
+    #   blockinfile:
+    #     path: '{{ home_dir }}/.bashrc'
+    #     marker: "# {mark} ANSIBLE MANAGED BLOCK .nvm"
+    #     block: |
+    #       # source nvm
+    #       export NVM_DIR="{{ home_dir }}/.nvm"
+    #       [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+    #       [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+    # - name: Source NVM and install Node.js version
+    #   become: yes
+    #   become_user: "{{ main_user }}"
+    #   shell:
+    #     cmd: |
+    #       # Load nvm
+    #       export NVM_DIR="{{ home_dir }}/.nvm"
+    #       [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+          
+    #       # Install and use node version
+    #       nvm install {{ node_version }}
+    #       nvm use {{ node_version }}
+    #       nvm alias default {{ node_version }}
+    #   args:
+    #     executable: /bin/bash
+
+
+    # # MongoDB Installation and Configuration
+    # - name: Install prerequisites for mongo
+    #   apt:
+    #     pkg:
+    #       - apt-transport-https
+    #       - ca-certificates
+    #       - curl
+    #       - gnupg
+    #       - dirmngr
+    #     state: present
+    #     update_cache: yes
+
+    # - name: Create mongodb-org-7.0.list file in sources list
+    #   copy: 
+    #     dest: /etc/apt/sources.list.d/mongodb-org-7.0.list 
+    #     content: deb [arch=amd64] https://repo.mongodb.org/apt/ubuntu {{ ansible_distribution_release }}/mongodb-org/7.0 multiverse
+    #     force: no
+    #     mode: '0644'
+
+    # - name: Add MongoDB GPG key
+    #   apt_key:
+    #     url: https://pgp.mongodb.com/server-7.0.asc
+    #     state: present
+  
+    # - name: Create policy-rc.d script to prevent mongod.service service startup
+    #   copy:
+    #     dest: /usr/sbin/policy-rc.d
+    #     content: |
+    #       #!/bin/sh
+    #       exit 101
+    #     mode: '0755'
+    # - name: Install MongoDB
+    #   apt:
+    #     pkg:
+    #       - mongodb-org
+    #       - mongodb-org-shell
+    #     state: present
+    #     update_cache: yes
+    # - name: Remove the default mongod.service file
+    #   file:
+    #     path: /etc/systemd/system/mongod.service
+    #     state: absent
+    # - name: Remove policy-rc.d script
+    #   file:
+    #     path: /usr/sbin/policy-rc.d
+    #     state: absent
+
+
+    # - name: Mongo write the conf file
+    #   template:
+    #     src:    "filesToCopyToTargetFilesystem/home/main_user/context/mongo/mongod.conf.j2"
+    #     dest:   "{{ context_dir }}/mongo/mongod.conf"
+    #     owner:  "{{ main_user }}"
+    #     group:  "{{ main_user }}"
+    #     mode:   "0644"
+
+    # - name: Create systemd service
+    #   copy:
+    #     dest: "/etc/systemd/system/at.mongo.service"
+    #     content: |
+    #       [Unit]
+    #       Description=Start MongoDB
+
+    #       [Service]
+    #       User={{ main_user }}
+    #       ExecStart=/usr/bin/mongod -f "{{ context_dir }}/mongo/mongod.conf"
+    #       Restart=on-failure
+
+    #       [Install]
+    #       WantedBy=multi-user.target
+    #     mode: '0644'
+    # - name: Reload systemd
+    #   systemd:
+    #     daemon_reload: yes
+
+    # - name: Start the at.mongo.service
+    #   ansible.builtin.service: 
+    #     name: at.mongo.service
+    #     state: started
+    #     enabled: yes
+
+
+    # # Check everything is running as expected
+    # - name: Gather service facts
+    #   service_facts:
+
+    # - name: Check if my_service is running
+    #   debug:
+    #     msg: "at.mongo.service is running!"
+    #   when: "'at.mongo.service' in ansible_facts.services and ansible_facts.services['at.mongo.service'].state == 'running'"
+
+
+    # Switch user and SSH key to sudo_user
+    # - name: Switch user and SSH key to sudo_user
+    #   set_fact:
+    #     ansible_user: "{{ sudo_user }}"
+    #     ansible_ssh_private_key_file: "~/.ssh/ansible.sudoUser.key.shouldCycleThisKey"

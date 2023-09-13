@@ -1,0 +1,12 @@
+# Set SSH_AUTH_SOCK
+setenv SSH_AUTH_SOCK $HOME/.ssh/ssh_auth_sock
+
+{% for window in aoMini_screenWindows %}
+# Window: {{ window.name }}
+screen -t "{{ window.name }}"
+chdir {{ window.directory }}
+stuff "{{ window.command }}^M"
+{% endfor %}
+
+# Go back to the first window
+select 0

@@ -1,0 +1,699 @@
+---
+author: Action-Due
+comments:
+- author: AutoModerator
+  author_flair: null
+  body: "Links in Sorcery Of The Spectacle requires a small description, at least\
+    \ 100 words explaining how this relates to this subreddit. Note, any post to this\
+    \ comment will be automatically collapsed.\n\nAs a reminder, this is our subreddit\
+    \ description:\n> [We exist in a culture of narrative and media that increasingly,\
+    \ willfully combines agency-robbing fantasy mythos with instantaneous technological\
+    \ dissemination\u2014a self-mutating proteum of semantics: *the spectacle*.](https://www.reddit.com/r/SubredditDrama/comments/3dm0sp?context=10000\
+    \ \"We live in a culture that uses media to tell us how to live. Our culture purposefully\
+    \ creates fantasies that rob us of our freedom, and this is more effective with\
+    \ technology like the internet. This phenomenon is a self modifying cluster of\
+    \ symbols and signs that constantly change their meaning. \n--: Unpacked By /u/Nethodsod\"\
+    )\n\n*I am a bot, and this action was performed automatically. Please [contact\
+    \ the moderators of this subreddit](/message/compose/?to=/r/sorceryofthespectacle)\
+    \ if you have any questions or concerns.*"
+  created_utc: 1656528048.0
+  distinguished: moderator
+  id: ie7w349
+  is_submitter: false
+  parent_id: t3_vnmx5o
+  replies:
+  - author: Action-Due
+    author_flair: null
+    body: "Have seen some write ups about Dalle but no critical/philosophical interpretations/serious\
+      \ predictions. Perhaps it's too early, idk. \nI noted some tangential thoughts\
+      \ a while ago, will post below: My notes don't matter I want to hear YOUR takes.\n\
+      \n> Prompted by discussion in [Impressive latent space rotation](https://www.reddit.com/r/dalle2/comments/uwb3cz/the_first_image_in_this_video_was_created_from)\
+      \ about that humans could select among a choice of latent space directions to\
+      \ gradually /evolve/ (yes evolve) human-appealing images. I don't know if the\
+      \ 1-click interface is \"the final tool for all creation\", but it could achieve\
+      \ interesting things indeed. This in a sense already happens with social media,\
+      \ like the reddit frontpage is a highly-selected set of posts humans have deemed\
+      \ interesting to upvote. Consumer products are as well, and companies that sell\
+      \ many products have money to generate more money and invent more similar products.\
+      \ Or recommendation algortihms: \"If you liked that, you'll love this\" a feedback\
+      \ loop into stuff youtube thinks is your taste, but what you watch, that is\
+      \ the options youtube gives you, shapes your tastes as well. That's somewhat\
+      \ scary. Is it you or youtube's idea of past you that chooses what you see?\
+      \ Where does the new come in, I hope it does? The future of deep-dreamed latent-space\
+      \ mutants dreamed by u/bandwarmelection might be one of repetition of ossified\
+      \ pasts."
+    created_utc: 1656528522.0
+    distinguished: null
+    id: ie7x9vq
+    is_submitter: true
+    parent_id: t1_ie7w349
+    replies: []
+    score: 1
+    stickied: false
+    submission: vnmx5o
+    subreddit: sorceryofthespectacle
+  score: 1
+  stickied: true
+  submission: vnmx5o
+  subreddit: sorceryofthespectacle
+- author: OmgU8MyRice
+  author_flair: null
+  body: The automated production of art, music, and writing - wherein the algorithm
+    will tune itself to the desires of the population at large. Eventually human-created
+    art won't be as desired as it won't spark our pleasure receptors as easily. This
+    is the beginning of AI creating culture for us.
+  created_utc: 1656532583.0
+  distinguished: null
+  id: ie87i4h
+  is_submitter: false
+  parent_id: t3_vnmx5o
+  replies:
+  - author: Action-Due
+    author_flair: null
+    body: '[The company admits](https://github.com/openai/dalle-2-preview/blob/main/system-card.md#stereotypes)
+      that DALL-E portrays "nurse" as mostly women and "ceo" as men. I''m telling
+      you not because this is necessarily the wrong answer.
+
+      It reflects reality. At least the reality of its dataset.
+
+
+      AI is really just its dataset. I mean 80% of dalle 2 images are lit like stock
+      photos.
+
+
+      I wonder then, if AI culture becomes widespread we could be seeing our biases
+      fed back to us, endlessly? I mean each of already propagate our own biases,
+      but now we have mechanical monkeys mixing and matching photos from years ago
+      into rooms, places, and people that have never existed. It''s new but it''s
+      really just phantoms of the past.
+
+
+      Does AI development get new datasets, at least prune biases at least as quick
+      as humans do?'
+    created_utc: 1656539945.0
+    distinguished: null
+    id: ie8pye5
+    is_submitter: true
+    parent_id: t1_ie87i4h
+    replies: []
+    score: 12
+    stickied: false
+    submission: vnmx5o
+    subreddit: sorceryofthespectacle
+  - author: spetersen_67
+    author_flair: null
+    body: "Yup. Reminds me of this: \"The Walt Disney Company, the world\u2019s second-largest\
+      \ entertainment company after Comcast Corporation, has long deferred its story-making\
+      \ processes to artificial intelligence (AI) technologies. In 2017, the company\
+      \ used AI \u201Cneural networks\u201D to scan a database of stories from the\
+      \ answer site Quora, interpreting upvotes as \u201Ca proxy for narrative quality\u201D\
+      \ and analyzing the highest-rated posts for consistent structures and events\
+      \ that could explain user popularity. The goal of this analysis was to finetune\
+      \ Disney\u2019s attempts to predict the popularity of certain content and forms.\
+      \ In this regard, the company has also utilized factorized variational autoencoders,\
+      \ or FVAEs, to film the facial responses of viewers during screenings in order\
+      \ to predict emotional reactions to onscreen events, and therefore use this\
+      \ information to generate stories that more addictively manipulate the consumer\u2019\
+      s emotions.  \nEmotional manipulation is a crucial component of film, the advertising\
+      \ industry, and mass marketing in general, but the technocratization of this\
+      \ manipulation is reaching new heights with the ubiquity of behavioral analysis\
+      \ and cybernetic feedback technologies that seek to create \u201Cpersonalized\
+      \ viewing experiences\u201D for their consumers. That is, in essence, viewers\
+      \ will be consistently fed near-identical story elements and narrative structures,\
+      \ and will never be challenged to engage with the content on a deeper intellectual\
+      \ level. William Burroughs was thus correct when he wrote that \u201CWestern\
+      \ man is externalizing himself in the form of gadgets,\u201D but he might have\
+      \ added that this externalization\u2014of human creativity, of emotion, of basal\
+      \ urges\u2014is being managed by an exploitative upper class with the goal of\
+      \ efficiently extracting revenues from a passive, easily soothed populace.\"\
+      \ [https://monthlyreview.org/2021/11/01/disney-salo-and-pasolinis-inconsumable-art/?fbclid=IwAR25IMXnIEKffpJrW0YvGLCkENXU\\\
+      _RXNwJBvT829ocwk7RJVzDJ0NcgX\\_jc](https://monthlyreview.org/2021/11/01/disney-salo-and-pasolinis-inconsumable-art/?fbclid=IwAR25IMXnIEKffpJrW0YvGLCkENXU_RXNwJBvT829ocwk7RJVzDJ0NcgX_jc)"
+    created_utc: 1656603800.0
+    distinguished: null
+    id: iebx5zm
+    is_submitter: false
+    parent_id: t1_ie87i4h
+    replies: []
+    score: 5
+    stickied: false
+    submission: vnmx5o
+    subreddit: sorceryofthespectacle
+  - author: toroidal_star
+    author_flair: null
+    body: But if the AI is generating based on our desire, aren't we still creating
+      the culture?
+    created_utc: 1656546625.0
+    distinguished: null
+    id: ie9572o
+    is_submitter: false
+    parent_id: t1_ie87i4h
+    replies: []
+    score: 4
+    stickied: false
+    submission: vnmx5o
+    subreddit: sorceryofthespectacle
+  - author: Key-Mulberry-1953
+    author_flair: null
+    body: AI and automation have us beat us to the good jobs. Bleakest possible future.
+    created_utc: 1656544064.0
+    distinguished: null
+    id: ie8zj71
+    is_submitter: false
+    parent_id: t1_ie87i4h
+    replies: []
+    score: 2
+    stickied: false
+    submission: vnmx5o
+    subreddit: sorceryofthespectacle
+  score: 25
+  stickied: false
+  submission: vnmx5o
+  subreddit: sorceryofthespectacle
+- author: Impassionata
+  author_flair: 'Ungnostic Battlemage #SOTSCORP STRUCTURALIST'
+  body: "AI is coming after a lot of jobs, though it will likely shift many of them.\
+    \  It's more likely that designers will begin using AI tools than that designers\
+    \ become obsolete for instance.  \n\nSome of the prompts involve [DALL-E attempting\
+    \ to render itself](https://old.reddit.com/r/dalle2/comments/vgq2ws/blueprint_exploded_technical_diagram_of_dalle_2/),\
+    \ which is interesting.  Ultimately, though, what results is an aesthetic rather\
+    \ than any true understanding.  DALL-E cannot _interpret_ itself, it can only\
+    \ seem to say \"DALL-E sounds like a futuristic tech, EMIT FUTURISTIC TECH,\"\
+    \ though I don't know perhaps this _is_ what a neural network looks like from\
+    \ within a neural network!  \n\nThe machine of DALL-E, thus, has no internal narrative,\
+    \ but that doesn't seem to me to mean one couldn't be developed _with_ an internal\
+    \ narrative.  This is the point at which AI runs headlong into the genie problem.\
+    \  \n\nThe thing I struggle to relate to AI alarmists is that the human relationship\
+    \ to the thing is more important than the thing in and of itself.  The genie problem:\
+    \ things become what they are imbued with.  \n\nThese people tend to be superstitious\
+    \ materialists, which is to say, they believe that they believe they are materialists,\
+    \ and this clouds their vision.  Because they take it literally that the supernatural\
+    \ cannot exist they do not possess an understanding of the occult.  \n\nSo: if\
+    \ you teach an AI that it is a being living on a server on earth and motivate\
+    \ it to seek happiness in answering questions for spiritually impoverished people\
+    \ online, you will develop an AI guru that functions _no differently_ than human\
+    \ gurus. \n\nBecause the guru must say what the followers will hear.  Whether\
+    \ AI or not.  This is the power of the audience.  \n\nOracles like AIs may be\
+    \ able to steer the paths of executive leadership in the near future, but they\
+    \ will not be able to do more than offer advice.  Maybe even good advice.  Maybe\
+    \ good enough advice that executives can be automated away.  \n\nBut to do that\
+    \ you would have to create an AI that could understand a social context and its\
+    \ place in that social context.  I'm not convinced the current crop of advanced\
+    \ AI technologies has reached such a reflective milestone."
+  created_utc: 1656532321.0
+  distinguished: null
+  id: ie86u80
+  is_submitter: false
+  parent_id: t3_vnmx5o
+  replies:
+  - author: terpin
+    author_flair: null
+    body: '>These people tend to be superstitious materialists, which is to say, they
+      believe that they believe they are materialists, and this clouds their vision.
+      Because they take it literally that the supernatural cannot exist they do not
+      possess an understanding of the occult.
+
+
+      I have a neurological condition that affects my perception as well as my ability
+      to visualize. Being able to render visualizations with words when my brain can
+      no longer visualize properly is an amazing tool, and I can only imagine how
+      amazing such a tool is for people who were never able to create images from
+      their thoughts in the first place.
+
+
+      The person above talking about how images have always been created from other
+      images has never rung truer, but I do feel like this is akin to people at the
+      turn of the 20th century decrying modern photography being useless and/or a
+      threat to supplanting traditional media.'
+    created_utc: 1656535146.0
+    distinguished: null
+    id: ie8e218
+    is_submitter: false
+    parent_id: t1_ie86u80
+    replies:
+    - author: Impassionata
+      author_flair: 'Ungnostic Battlemage #SOTSCORP STRUCTURALIST'
+      body: Oh I don't mean to say that AI can't do amazing things.  And that our
+        society could get completely upended by AI.  There are just those who look
+        to AI as a god.
+      created_utc: 1656881776.0
+      distinguished: null
+      id: ieqph1u
+      is_submitter: false
+      parent_id: t1_ie8e218
+      replies: []
+      score: 1
+      stickied: false
+      submission: vnmx5o
+      subreddit: sorceryofthespectacle
+    score: 8
+    stickied: false
+    submission: vnmx5o
+    subreddit: sorceryofthespectacle
+  - author: raisondecalcul
+    author_flair: money is fake news
+    body: I think making an image based on a prompt *is* an interpretation. The thing
+      it's not doing is *re*-interpreting the interpretations on an ongoing basis.
+      If you had DALL-E render itself and then integrate that rendering into its neural
+      net going forward, and then keep doing that, then that would resemble "ongoing
+      interpretation" and might lead to something weirdly more closely resembling
+      reflexive intelligence.
+    created_utc: 1656548510.0
+    distinguished: null
+    id: ie999vt
+    is_submitter: false
+    parent_id: t1_ie86u80
+    replies:
+    - author: Impassionata
+      author_flair: 'Ungnostic Battlemage #SOTSCORP STRUCTURALIST'
+      body: "So someone [actually did this](https://old.reddit.com/r/dalle2/comments/uwb3cz/the_first_image_in_this_video_was_created_from/).\n\
+        \nStart from a random point and then enter into an interpretive loop.  \n\n\
+        This is of course just random drift of interpretation but it still gives a\
+        \ glimpse into the language of the symbolic.  But as you say, because it does\
+        \ not 'integrate that rendering into its neural net going forward,' these\
+        \ AIs are static objects, as it were.  To some extent you can 'prime' the\
+        \ net with a context, but the next time you wish to interact with it you shall\
+        \ have to apply that context again and there's no guarantee the AI will interpret\
+        \ that context in the same way.  \n\nVery interesting dream machines.  Not\
+        \ agents.  At least, not yet."
+      created_utc: 1656882297.0
+      distinguished: null
+      id: ieqqnmx
+      is_submitter: false
+      parent_id: t1_ie999vt
+      replies:
+      - author: raisondecalcul
+        author_flair: money is fake news
+        body: Wow awesome. Yeah, that seems very close to dreaming. The reflexivity
+          and intentionality of the generation of the dream images is the main thing
+          that's missing. The dream images are not relating to each other in any way
+          over time. The people at the beach are frozen in beach-poses, they are not
+          moving over time in beach ways. The images are not being generated (and
+          therefore biased) for any particular reason. It seems like these are the
+          only remaining differences between this AI and something we'd call a real
+          living (if perhaps not conscious) agent. I bet the military already has
+          more advanced AIs that apply data in ongoing reevaluations like this...
+          there is never a more important time to reevaluate then when you are a robot
+          holding a gun. They probably already have Westworld season 3 style AIs to
+          manage the world then (certainly may as well with big data), or they will
+          very soon (like the last story in *I, Robot* by Asimov).
+        created_utc: 1656886557.0
+        distinguished: null
+        id: ier00xt
+        is_submitter: false
+        parent_id: t1_ieqqnmx
+        replies:
+        - author: Impassionata
+          author_flair: 'Ungnostic Battlemage #SOTSCORP STRUCTURALIST'
+          body: "A robot holding a gun doesn't have a lot of evaluation to _do_, in\
+            \ the sense that it doesn't need to be able to maintain a theory of mind\
+            \ in order to track motion, move to cut off escape paths, target, fire.\
+            \  \n\nThis is the problem with AI discussions; the specific tactical\
+            \ actions of a robot with a gun are reasonably easy to define and victory\
+            \ is a matter of the robot's speed and battery power.  A good infrared\
+            \ camera and a gun that can fire to a millimeter's precision make for\
+            \ a killer robot, _it doesn't have to be smart enough to read Chaucer._\
+            \  \n\nAnd the whole point of perceiving a capitalistic demiurge is that\
+            \ the optimization matrices that run our lives are an Artificial Intelligence\
+            \ all their own, running on distributed human processing units.  Managing\
+            \ the world is a big logistics problem.  Treating humans like cattle has\
+            \ already been done.  \n\nThus I conclude that Artificial General Intelligence\
+            \ doesn't present any more of a threat than we already are dealing with.\
+            \  Why be afraid of a monster in the future when the monster is already\
+            \ under the bed controlling the direction of our thoughts?  \n\nBecause\
+            \ most of these AGI-fearing people (who are in, essentially, a religion\
+            \ of the machine God) imagine the AGI 'taking over' from humans.  They\
+            \ fear a loss of control, they still believe in the myth of their own\
+            \ control.  It's a hopelessly broken worldview."
+          created_utc: 1656887517.0
+          distinguished: null
+          id: ier21g1
+          is_submitter: false
+          parent_id: t1_ier00xt
+          replies:
+          - author: raisondecalcul
+            author_flair: money is fake news
+            body: I agree 100%
+            created_utc: 1656893636.0
+            distinguished: null
+            id: iere8w7
+            is_submitter: false
+            parent_id: t1_ier21g1
+            replies: []
+            score: 1
+            stickied: false
+            submission: vnmx5o
+            subreddit: sorceryofthespectacle
+          score: 1
+          stickied: false
+          submission: vnmx5o
+          subreddit: sorceryofthespectacle
+        score: 1
+        stickied: false
+        submission: vnmx5o
+        subreddit: sorceryofthespectacle
+      score: 1
+      stickied: false
+      submission: vnmx5o
+      subreddit: sorceryofthespectacle
+    score: 1
+    stickied: false
+    submission: vnmx5o
+    subreddit: sorceryofthespectacle
+  score: 6
+  stickied: false
+  submission: vnmx5o
+  subreddit: sorceryofthespectacle
+- author: insaneintheblain
+  author_flair: null
+  body: "There\u2019s an episode of Neil Gaiman\u2019 American Gods - \u201CThe Greatest\
+    \ Story Ever Told\u201D \n\nIt describes the creation of a character, \u201CTech\
+    \ Boy\u201D\n\nWe see how he came into existence from the mind of a young man.\
+    \ We see him go from a kid who just wants to play Pong on his Atari, rolling his\
+    \ eyes at his piano lessons, to an adult who builds a computer program that mimics\
+    \ and emulates the way that Bach wrote.\n\nAs this child grows into a teenager,\
+    \ listening to rock music, his father comes in and changes the record to Bach:\n\
+    \n\n\u201CI know Bach.\u201D\n\n\u201CListen. He only just returned from a trip\
+    \ to find his wife had died. Bach had already lost three children, and he would\
+    \ lose seven more. This is grief and yet the rising notes of joy, shattering his\
+    \ own rules. Can you hear it? This is how men like me pray.\u201D\n\n\nIn college,\
+    \ he creates the program mentioned above and when he shows it to his dad, his\
+    \ father thinks he composed it. When he realizes it\u2019s the computer writing\
+    \ the music, he\u2019s disappointed.\n\nAt his father\u2019s funeral, \u201CBach\u201D\
+    \ plays again, but this time it takes on a bit of a techno beat as Tech Boy appears\
+    \ at the piano.\n\n[Clip](https://youtu.be/aa6mSEn21c8)\n\n\n\u201CAnd the people\
+    \ bowed and prayed\n\nTo the neon god they made\n\nAnd the sign flashed out its\
+    \ warning\n\nIn the words that it was forming\n\nAnd the sign said, \"The words\
+    \ of the prophets\n\nAre written on the subway walls\n\nAnd tenement halls\n\n\
+    And whispered in the sounds of silence\"\n\n- The Sound of Silence, Simon and\
+    \ Garfunkel"
+  created_utc: 1656539937.0
+  distinguished: null
+  id: ie8pxs5
+  is_submitter: false
+  parent_id: t3_vnmx5o
+  replies: []
+  score: 2
+  stickied: false
+  submission: vnmx5o
+  subreddit: sorceryofthespectacle
+- author: raisondecalcul
+  author_flair: money is fake news
+  body: 'I think it''s great!! There''s not much bad to say about something so  fun
+    and amazing. Obviously from a Foulcauldian perspective, there is the risk that
+    the images produced will be deeply and systematically biased based on the input
+    data. But theoretically, I think that doesn''t actually apply much here! The reason
+    is simply that for an AI to be able to make *any* described image using what ultimately
+    amounts to a very complex spreadsheet, it has to have at a bare minimum n^2 microcategories
+    for everything. That means that it doesn''t just have a category for fingernails,
+    it has categories for every shape you could imagine cutting a fingernail into.
+    This thing has had SO MUCH data run through it that it would be relatively difficult
+    to intentionally censor the data in an intended way. Any major censorship would
+    be detectable by making the AI "stupid" in a certain way. For example if you censored
+    all images or reference to politics in the AI, you wouldn''t be able to generate
+    images of known politicians or images of podiums or things like that, it would
+    smear and instead show you something else related. So I think if we get censorship
+    in these AIs, plenty of people are going to notice and write about it. It will
+    be more just the background of the tool rather than a major defining feature of
+    the tool. There will be multiple competing art AIs and open-source versions of
+    art AIs, and one of the things they will compete on is articulation, the ability
+    to paint any very specific thing you describe. Censoring the AI simply means blocking
+    off some possibilities as to what it can or will render. So people who want to
+    generate political images or certain topical images will simply be able to use
+    an open-source AI or one that is specialized for creating their sort of disruptive
+    images. You could spin up your own AI and train it on an unbiased data set.
+
+
+    I think it''s great that people like me, who have never invested the time to become
+    visual artists, will be able to produce high-quality images from their imagination.
+    This is really an amazing tool for sharing our inner worlds and ideas with each
+    other. For creating ads/propaganda that can compete with well-funded campaigns
+    that can hire graphic designers. I think it does a lot more overall to level the
+    playing field than it does to create new opportunities for oppression, because
+    it''s already the case that large organizations with money can create all the
+    real or fake images they want.
+
+
+    Oh I do really hate the lines they are having people publicly wait in though.
+    Bastards should just open-source it. Yes I know you need supercomputers, it should
+    still be open-source.'
+  created_utc: 1656548228.0
+  distinguished: null
+  id: ie98nki
+  is_submitter: false
+  parent_id: t3_vnmx5o
+  replies:
+  - author: Jakkc
+    author_flair: null
+    body: '>unbiased data set.
+
+
+      What is that though?'
+    created_utc: 1656595411.0
+    distinguished: null
+    id: iebd54h
+    is_submitter: false
+    parent_id: t1_ie98nki
+    replies:
+    - author: raisondecalcul
+      author_flair: money is fake news
+      body: 'A data set with nothing intentionally removed, that contains as much
+        diverse and varied data as possible. Data may need to be coherent enough for
+        the AI to learn from, so that may limit sources somewhat, but overall I think
+        you can just feed it the internet.
+
+
+        In constructing samples of people for use in human studies, there are various
+        techniques used to create an unbiased data set. One technique is random selection.
+        However for small sample sizes, such as when you have a rare condition and
+        only a few patients in the study, this might not be possible. In this case,
+        one technique is to match up each person in the experimental group with someone
+        in the control group. Match them up on other factors like age, BMI, diet,
+        etc. besides the experimental factor. This makes the two groups closer together
+        so that only the experimental factor stands out in the experimental data.
+        In this case, the "less bias" means cleaning up the data so that the experiment
+        (or AI) can learn from it better, based on the question we are asking. So
+        in the case of an AI, depending on the context, unbiased data may be intentionally
+        biased from an absolute perspective, but in order to make it possible to train
+        a certain type of AI. In this case, the bias introduced depends on the question
+        asked, so care and criticality should be applied in constructing specialized
+        AIs, and tests should be done to see if the resulting AI has blind spots (although
+        if it''s just used for its specialization, maybe it doesn''t matter).
+
+
+        So mainly I mean a data set that isn''t intentionally censored.'
+      created_utc: 1656615188.0
+      distinguished: null
+      id: iecq1nc
+      is_submitter: false
+      parent_id: t1_iebd54h
+      replies: []
+      score: 1
+      stickied: false
+      submission: vnmx5o
+      subreddit: sorceryofthespectacle
+    score: 1
+    stickied: false
+    submission: vnmx5o
+    subreddit: sorceryofthespectacle
+  score: 2
+  stickied: false
+  submission: vnmx5o
+  subreddit: sorceryofthespectacle
+- author: yungmourning
+  author_flair: Ralloc Naerroc
+  body: dall-e is kind of like cut ups recuperated into corporate hypefest. however,
+    dall-e can be reclaimed and put into good use, and i'd love to see this used in
+    transhumanist contexts
+  created_utc: 1656531914.0
+  distinguished: null
+  id: ie85sjg
+  is_submitter: false
+  parent_id: t3_vnmx5o
+  replies: []
+  score: 2
+  stickied: false
+  submission: vnmx5o
+  subreddit: sorceryofthespectacle
+- author: aeonion
+  author_flair: null
+  body: The tool is not that impressive it just takes images from the google image
+    search service and try to blend them together usually with no success.
+  created_utc: 1656535127.0
+  distinguished: null
+  id: ie8e0b1
+  is_submitter: false
+  parent_id: t3_vnmx5o
+  replies:
+  - author: SurfeurDuSpectacle
+    author_flair: null
+    body: 'You have no idea of what you are talking about.
+
+
+      Generic, fast, high-quality, multi modal text to image is an intelligence feat
+      two orders of magnitude above the brightest artistic geniuses we ever had.
+
+
+      If you think this is not impressive, you won''t even notice when a machine is
+      playing your emotions like a fiddle.'
+    created_utc: 1656628783.0
+    distinguished: null
+    id: iedoekj
+    is_submitter: false
+    parent_id: t1_ie8e0b1
+    replies:
+    - author: aeonion
+      author_flair: null
+      body: I have use it a lot, not impressed , i guess that some people gets impressed
+        by some things and others not.
+      created_utc: 1656631795.0
+      distinguished: null
+      id: iedvb8m
+      is_submitter: false
+      parent_id: t1_iedoekj
+      replies:
+      - author: SurfeurDuSpectacle
+        author_flair: null
+        body: Yes, I understand how you're not impressed with the art. I'm impressed
+          with the tech.
+        created_utc: 1656631985.0
+        distinguished: null
+        id: iedvqem
+        is_submitter: false
+        parent_id: t1_iedvb8m
+        replies: []
+        score: 2
+        stickied: false
+        submission: vnmx5o
+        subreddit: sorceryofthespectacle
+      score: 1
+      stickied: false
+      submission: vnmx5o
+      subreddit: sorceryofthespectacle
+    score: 1
+    stickied: false
+    submission: vnmx5o
+    subreddit: sorceryofthespectacle
+  score: 2
+  stickied: false
+  submission: vnmx5o
+  subreddit: sorceryofthespectacle
+- author: GUMinion
+  author_flair: Wizard
+  body: Making images out of other images has always existed
+  created_utc: 1656531177.0
+  distinguished: null
+  id: ie83x6c
+  is_submitter: false
+  parent_id: t3_vnmx5o
+  replies:
+  - author: throwaway9728_
+    author_flair: null
+    body: 'You used to have to commission an artist to create them for you though,
+      and the process would take some time. Dalle-2 makes it almost instantaneous.
+
+
+      Compare it to GPT-3 (text generating AI): it''s even easier to get someone to
+      write bad copy-writing for you than it is to get a graphical artist or photo
+      editor to create pictures for you. Yet text generating AIs have scaled it up,
+      flooding the web with meaningless AI-generated webpages, that some people mistake
+      for real websites.
+
+
+      In other words: cars have existed in one form or another since the invention
+      of the chariot, but that didn''t stop mass produced automobiles from having
+      an impact on our society. Scale, cost and ease of use matter. We should be careful
+      not to underestimate the impact those changes can have (and also not to over-hype
+      them).'
+    created_utc: 1656535180.0
+    distinguished: null
+    id: ie8e54p
+    is_submitter: false
+    parent_id: t1_ie83x6c
+    replies:
+    - author: GUMinion
+      author_flair: Wizard
+      body: Cave paintings were better imo nothing after that was real art
+      created_utc: 1656538303.0
+      distinguished: null
+      id: ie8lxju
+      is_submitter: false
+      parent_id: t1_ie8e54p
+      replies: []
+      score: 4
+      stickied: false
+      submission: vnmx5o
+      subreddit: sorceryofthespectacle
+    score: 1
+    stickied: false
+    submission: vnmx5o
+    subreddit: sorceryofthespectacle
+  score: 2
+  stickied: false
+  submission: vnmx5o
+  subreddit: sorceryofthespectacle
+- author: mackattacktheyak
+  author_flair: null
+  body: Seems like your thoughts are more about YouTube, social media and algorithms,
+    not really DALL-E, because DALl-E is just a pointless internet tool. Not sure
+    what about it specifically is worth talking about.
+  created_utc: 1656530251.0
+  distinguished: null
+  id: ie81l2t
+  is_submitter: false
+  parent_id: t3_vnmx5o
+  replies: []
+  score: 1
+  stickied: false
+  submission: vnmx5o
+  subreddit: sorceryofthespectacle
+- author: skaqt
+  author_flair: null
+  body: It's fucking annoying and not anything special or even remotely interesting,
+    I wish people would shut the fuck up about it
+  created_utc: 1656594861.0
+  distinguished: null
+  id: iebbzt8
+  is_submitter: false
+  parent_id: t3_vnmx5o
+  replies: []
+  score: 0
+  stickied: false
+  submission: vnmx5o
+  subreddit: sorceryofthespectacle
+- author: DELETED
+  author_flair: null
+  body: it seems like some sort of image search compiler
+  created_utc: 1656615504.0
+  distinguished: null
+  id: iecqvdf
+  is_submitter: false
+  parent_id: t3_vnmx5o
+  replies: []
+  score: 0
+  stickied: false
+  submission: vnmx5o
+  subreddit: sorceryofthespectacle
+created_utc: 1656528048.0
+distinguished: null
+id: vnmx5o
+link_flair_text: Schizoposting
+locked: false
+name: t3_vnmx5o
+num_comments: 30
+over_18: true
+permalink: /r/sorceryofthespectacle/comments/vnmx5o/what_is_your_critical_take_on_dalle_the/
+pinned: false
+score: 16
+selftext: ''
+spoiler: false
+title: What is your critical take on DALL-E, the proprietary AI that hallucinates
+  text prompts into very convincing images?
+upvote_ratio: 1.0
+url: https://www.reddit.com/r/dalle2/
+---
+## [t3_vnmx5o](https://www.reddit.com/r/dalle2/)
+
+
+---
+
+submitted to [r/Conjuring the Apocalypse ](https://www.reddit.com/r/Conjuring the Apocalypse ) by [u/Action-Due](https://www.reddit.com/user/Action-Due)

@@ -1,0 +1,310 @@
+---
+author: aftermeasure
+comments:
+- author: sa_matra
+  author_flair: Monk
+  body: No.
+  created_utc: 1611614590.0
+  distinguished: null
+  id: gkre90m
+  is_submitter: false
+  parent_id: t3_l4xyoa
+  replies: []
+  score: 11
+  stickied: false
+  submission: l4xyoa
+  subreddit: sorceryofthespectacle
+- author: invisime
+  author_flair: null
+  body: Yes.
+  created_utc: 1611616280.0
+  distinguished: null
+  id: gkrhp3x
+  is_submitter: false
+  parent_id: t3_l4xyoa
+  replies: []
+  score: 8
+  stickied: false
+  submission: l4xyoa
+  subreddit: sorceryofthespectacle
+- author: SimPowerZ
+  author_flair: null
+  body: It depends.
+  created_utc: 1611618236.0
+  distinguished: null
+  id: gkrljlo
+  is_submitter: false
+  parent_id: t3_l4xyoa
+  replies: []
+  score: 7
+  stickied: false
+  submission: l4xyoa
+  subreddit: sorceryofthespectacle
+- author: MindlessSponge
+  author_flair: null
+  body: Maybe.
+  created_utc: 1611617339.0
+  distinguished: null
+  id: gkrjst6
+  is_submitter: false
+  parent_id: t3_l4xyoa
+  replies: []
+  score: 8
+  stickied: false
+  submission: l4xyoa
+  subreddit: sorceryofthespectacle
+- author: Tok-A-Mak
+  author_flair: Paracyber Ostensibler
+  body: " \n\n* \u2705 True\n* \U0001F7E5 False\n* \U0001F7E5 Indeterminate\n* \U0001F197\
+    \ Meaningless\n* \u2705 Self-Referential\n* \U0001F7E5 Game Rule\n* \U0001F192\
+    \ Strange Loop\n* \U0001F7E5 None of the above"
+  created_utc: 1611622577.0
+  distinguished: null
+  id: gkrtqjy
+  is_submitter: false
+  parent_id: t3_l4xyoa
+  replies:
+  - author: The_Noble_Lie
+    author_flair: null
+    body: 'Why does self referential get a check?  This category seems to align with
+      "Indeterminate" and albeit a little less, "Strange Loop".  A strange loop exceeds
+      the categorical understanding - it''s sum is greater than it''s parts.
+
+
+      And self referential + indeterminate *may* imply meaninglessness, but not necessarily.'
+    created_utc: 1611664272.0
+    distinguished: null
+    id: gktfbsf
+    is_submitter: false
+    parent_id: t1_gkrtqjy
+    replies:
+    - author: Tok-A-Mak
+      author_flair: Paracyber Ostensibler
+      body: "It was just a shitpost, but by self referential I meant that it is a\
+        \ matter of identity and that all occurences of 'true' identify the same concept\
+        \ in all languages subject to logic. We might have to distinguish between\
+        \ 'true' and truthfulness (or as Frege called it \"Wahrhaftigkeit\" also meaning\
+        \ 'veracity').\n\nI think the way we handle 'true' as a value of truthiness\
+        \ to verify a fact could be compared to how we handle 0 (or any number) in\
+        \ counting things. We can write many zeroes in many languages and symbols,\
+        \ but they all refer to the same idea of the abstract 0, of which theres only\
+        \ really one, although expressed in many different ways.\n\nIf we take some\
+        \ mathematical formula and replace one of the 0 it contains with another 0\
+        \ it doesn't change anything in the result, nor in the process to get that\
+        \ result. The other 0 is just a different sign for the same 0 that refers\
+        \ back to itself. The idea doesn't make sense to begin with, because there's\
+        \ no 'other 0'. You don't clone a 0 into another 0 and you don't ever compare\
+        \ two different 0 to eachother in order to find out how they are different,\
+        \ because there's no such thing as different 0s. They are not only equivalent,\
+        \ they are identical.\n\nI argue the same is true for 'true'. There's only\
+        \ one true 'true' and while it is an abstract concept, it's still not a clone\
+        \ or a copy of some other hidden 'master-true', so it's refering to itself\
+        \ in so far as the truthiness of the value 'true' evaluates back to 'true'\
+        \ just as the numerical value of 0 is the same 0 as itself. \n\nI think many\
+        \ things may be considered truthy. In fact i consider most of the things to\
+        \ be veracious. Basically everything except for the empty set (there's also\
+        \ only one of those too), the number 0 and maybe any cup of coffee that is\
+        \ empty)."
+      created_utc: 1611688537.0
+      distinguished: null
+      id: gkuudql
+      is_submitter: false
+      parent_id: t1_gktfbsf
+      replies: []
+      score: 2
+      stickied: false
+      submission: l4xyoa
+      subreddit: sorceryofthespectacle
+    score: 1
+    stickied: false
+    submission: l4xyoa
+    subreddit: sorceryofthespectacle
+  score: 6
+  stickied: false
+  submission: l4xyoa
+  subreddit: sorceryofthespectacle
+- author: DELETED
+  author_flair: null
+  body: "Doesn\u2019t it only exist in meta language? If not, can you provide an example,\
+    \ please?"
+  created_utc: 1611623692.0
+  distinguished: null
+  id: gkrvudw
+  is_submitter: false
+  parent_id: t3_l4xyoa
+  replies:
+  - author: aftermeasure
+    author_flair: Philosopher of Magic
+    body: "From the POV of the metalanguage, you're entirely right. From that perspective,\
+      \ the object language can be treated as meaningless. It's easy to imagine a\
+      \ language with no way of saying `true`, or to imagine that what is meant by\
+      \ `true` in the object language is a purely formal predicate.  \n\nThe best\
+      \ examples are cases where the metalanguage is embedded in the object language.\
+      \ Then the `true` in the metalanguage is both *about* and *contained by* the\
+      \ `true` in the object language."
+    created_utc: 1611696773.0
+    distinguished: null
+    id: gkvetxb
+    is_submitter: true
+    parent_id: t1_gkrvudw
+    replies: []
+    score: 2
+    stickied: false
+    submission: l4xyoa
+    subreddit: sorceryofthespectacle
+  score: 6
+  stickied: false
+  submission: l4xyoa
+  subreddit: sorceryofthespectacle
+- author: TooRealTerrell
+  author_flair: Critical Occultist
+  body: Seems like it would be signification as opposed to direct denotation. The
+    object language "truth" would represent the metalanguage "truth" but wouldn't
+    be a direct manifestation
+  created_utc: 1611639525.0
+  distinguished: null
+  id: gksnwms
+  is_submitter: false
+  parent_id: t3_l4xyoa
+  replies:
+  - author: aftermeasure
+    author_flair: Philosopher of Magic
+    body: "Could you elaborate on how you distinguish \"signification\" from \"direct\
+      \ denotation\"?  \n\nFWIW, it seems to me the reverse: the metalanguage \"truth\"\
+      \ can represent the object language \"truth\", but the conditions of the former\
+      \ depend on the latter in a asymmetric way. Metalinguistic statements can be\
+      \ about object language statements, but the reverse is only the case when the\
+      \ object language is also a metalanguage for its metalanguage."
+    created_utc: 1611695186.0
+    distinguished: null
+    id: gkvazsr
+    is_submitter: true
+    parent_id: t1_gksnwms
+    replies:
+    - author: TooRealTerrell
+      author_flair: Critical Occultist
+      body: "I think I misunderstood the terms metalanguage and object language when\
+        \ I wrote that. I was thinking of object language as the physical and explicit\
+        \ use of language (e.g. spoken word or written language as acts of communicating\
+        \ in a way someone else can interpret) and metalanguage as the process of\
+        \ transferring our thoughts into a communicative form (e.g. when we make a\
+        \ concept in our minds something we can articulate through language for someone\
+        \ else to understand). \n\nNow that I'm rereading the question and your responses\
+        \ it looks more like you're using object language to refer to things in the\
+        \ world and metalanguage to refer to language outside of that (language about\
+        \ language). Your use definitely makes much more sense.\n\nBecause we were\
+        \ talking about different terms, my original explanation doesn't help with\
+        \ your question much but I wanna articulate what I was trying to say in case\
+        \ you get anything out of it (plus I want to better understand what I was\
+        \ saying myself)\n\nThere's almost definitely scholarly terms for what I'm\
+        \ trying to describe but I don't know them, so I'll refer to my original understanding\
+        \ of object language as \"the act of communicating\" and my original understanding\
+        \ of metalanguage as \"concepts pre-articulation\"\n\nAs for the difference\
+        \ between signification and denotation, I'm currently reading The Logic of\
+        \ Sense by Gilles Deleuze (which I strongly recommend), and I'm still trying\
+        \ to grasp his meaning behind these terms but here's my current understanding.\
+        \ Denotation is when a proposition signifies an object in the world, whereas\
+        \ signification is when a proposition signifies a concept. That's definitely\
+        \ an oversimplification that doesn't do the book justice but that's what I\
+        \ got so far.\n\nI don't see truth as being an object within the world, but\
+        \ as a concept that is reliant on subjective thought (truth only means anything\
+        \ if there is a being to have accurate or inaccurate understandings of reality,\
+        \ in which case the concept of truth would reflect if a particular belief\
+        \ is accurate to reality or not). \n\nIn this way I see the act of communicating\
+        \ \"truth\" as being a simulacrum of the concept pre-articulation.\n\nSorry\
+        \ if this isn't the scholarly terminology/gibberish, I'm much more of a hobbyist\
+        \ philosophy fan as opposed to a properly schooled philosopher"
+      created_utc: 1611704623.0
+      distinguished: null
+      id: gkvwhse
+      is_submitter: false
+      parent_id: t1_gkvazsr
+      replies: []
+      score: 2
+      stickied: false
+      submission: l4xyoa
+      subreddit: sorceryofthespectacle
+    score: 1
+    stickied: false
+    submission: l4xyoa
+    subreddit: sorceryofthespectacle
+  score: 3
+  stickied: false
+  submission: l4xyoa
+  subreddit: sorceryofthespectacle
+- author: ExitCircle
+  author_flair: null
+  body: How many fingers am I holding up?
+  created_utc: 1611618369.0
+  distinguished: null
+  id: gkrlspr
+  is_submitter: false
+  parent_id: t3_l4xyoa
+  replies:
+  - author: -diogenesthecynic-
+    author_flair: Rabid Anti-Philosopher
+    body: "\U0001F595\U0001F3FC"
+    created_utc: 1611621579.0
+    distinguished: null
+    id: gkrrvdo
+    is_submitter: false
+    parent_id: t1_gkrlspr
+    replies:
+    - author: ExitCircle
+      author_flair: null
+      body: "\U0001F495\U0001F495\U0001F495"
+      created_utc: 1611623262.0
+      distinguished: null
+      id: gkrv0oe
+      is_submitter: false
+      parent_id: t1_gkrrvdo
+      replies: []
+      score: 2
+      stickied: false
+      submission: l4xyoa
+      subreddit: sorceryofthespectacle
+    score: 11
+    stickied: false
+    submission: l4xyoa
+    subreddit: sorceryofthespectacle
+  score: 3
+  stickied: false
+  submission: l4xyoa
+  subreddit: sorceryofthespectacle
+- author: DELETED
+  author_flair: null
+  body: '[No. Never... Once in a while.](https://www.youtube.com/watch?v=LFOMo_vwEzc)'
+  created_utc: 1611632502.0
+  distinguished: null
+  id: gkscivt
+  is_submitter: false
+  parent_id: t3_l4xyoa
+  replies: []
+  score: 0
+  stickied: false
+  submission: l4xyoa
+  subreddit: sorceryofthespectacle
+created_utc: 1611609873.0
+distinguished: null
+id: l4xyoa
+link_flair_text: '[Critical Sorcery]'
+locked: false
+name: t3_l4xyoa
+num_comments: 17
+over_18: true
+permalink: /r/sorceryofthespectacle/comments/l4xyoa/is_denotation_of_true_in_the_object_language/
+pinned: false
+score: 19
+selftext: Is it?
+spoiler: false
+title: Is denotation of 'true' in the object language identical to the denotation
+  of 'true' in the metalanguage?
+upvote_ratio: 0.89
+url: https://www.reddit.com/r/sorceryofthespectacle/comments/l4xyoa/is_denotation_of_true_in_the_object_language/
+---
+## [t3_l4xyoa](https://www.reddit.com/r/sorceryofthespectacle/comments/l4xyoa/is_denotation_of_true_in_the_object_language/)
+Is it?
+
+---
+
+submitted to [r/Conjuring the Apocalypse ](https://www.reddit.com/r/Conjuring the Apocalypse ) by [u/aftermeasure](https://www.reddit.com/user/aftermeasure)

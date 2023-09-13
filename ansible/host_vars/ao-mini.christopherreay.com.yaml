@@ -1,10 +1,9 @@
 host_name:              "ao-mini"
 
 sudo_user:              "sudoeree5b73"
-# sudo_user_password:     "$5$K.10rZ7OlVj30$bMoy6jjsRLs30NERXWX3iCJET47huaHDnK6jnz31fG3"
+sudo_user_pathToKeyFile: "~/.ssh/ansible.sudoUser.key.shouldCycleThisKey.pub"
 main_user:              "aominiuser"
-# main_user_password:     "$5$w4ghcOyX/mpBrVCa$ANtG9w7MBLPqyHvo69iFeWhff3j10j86DkjQ2Ge95UA"
-# my_public_ip: "{{ my_public_ip }}"
+main_user_pathToKeyFile: "~/.ssh/ansible.mainUser.key.shouldCycleThisKey.pub"
 
 home_dir:               "/home/{{ main_user }}"
 context_dir:            "{{ home_dir }}/context"

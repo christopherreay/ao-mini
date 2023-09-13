@@ -1,16 +1,9 @@
-# the base system for the @ system
+# harden a linux server
 
-# should probably break this up into roles
 
 ---
 - hosts: "ao_mini_development_hosts"
   become: yes
-  # vars:
-  #   required_home_directories:
-  #     - Scripts
-  #     - context
-  #   required_context_directories:
-  #     - aoMini
   tasks:
     # Perform a distribution upgrade.
     - name: Update apt cache
@@ -88,7 +81,7 @@
         path: /etc/iptables/rules.v4
         state: saved
 
-
+    
     # User management
     - name: Create non-root sudo_user
       user:
@@ -107,7 +100,7 @@
       authorized_key:
         user: "{{ sudo_user }}"
         state: present
-        key: "{{ lookup('file', '~/.ssh/ansible.sudoUser.key.shouldCycleThisKey.pub') }}"
+        key: "{{ lookup('file', '{{ sudo_user_pathToKeyFile }}') }}"
     - name: Allow sudo_user to have passwordless sudo
       lineinfile:
         path: /etc/sudoers.d/{{ sudo_user }}
@@ -138,7 +131,7 @@
       authorized_key:
         user: "{{ main_user }}"
         state: present
-        key: "{{ lookup('file', '~/.ssh/ansible.mainUser.key.shouldCycleThisKey.pub') }}"
+        key: "{{ lookup('file', '{{ main_user_pathToKeyFile }}') }}"
 
 
     # SSH Configuration
